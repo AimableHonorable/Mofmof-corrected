@@ -20,6 +20,7 @@ class PropertiesController < ApplicationController
 
   # GET /properties/1/edit
   def edit
+    1.times { @property.stations.build }
   end
 
   # POST /properties
